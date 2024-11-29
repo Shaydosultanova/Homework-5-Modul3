@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+} 
+
+.wrapper{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(235, 239, 199);
+    position: relative;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    animation-name: change;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes change{
+    0%{
+        margin-left: 0;
+        margin-top: 0;
+        background-color: aqua;
+    }
+
+    25%{
+        margin-left: 300px;
+        margin-top: 0;
+        background-color: red;
+    }
+
+    50%{
+        margin-left: 300px;
+        margin-top: 300px;
+        background-color: rgb(244, 130, 149);
+    }
+    
+    75%{
+        margin-left: 0;
+        margin-top: 300px;
+        background-color: black;
+    }
+
+    100%{
+        margin-left: 0;
+        margin-top: 0;
+        background-color: yellow;
+    }
+}
